@@ -1,0 +1,175 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.customPage {
+  position: relative;
+  width: 95%;
+  height: 80vh;
+  margin: 5vh auto;
+  overflow-x: auto;
+  background-color: #ffffff;
+  padding: 0 5%;
+  border-radius: 5px;
+  box-shadow: 0 0 3px grey;
+}
+
+.customTable {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-top: 90px;
+  border: 2px solid #dcdde1;
+  border-collapse: collapse;
+}
+.customTable .table-head th {
+  padding: 20px 10px;
+  background: rgba(127, 143, 166, 0.5);
+  border: 2px solid #dcdde1;
+  border-collapse: collapse;
+}
+.customTable .table-body td {
+  padding: 5px 2.5px;
+  border: 2px solid #dcdde1;
+  border-collapse: collapse;
+}
+
+.customBtnTable {
+  padding: 4px 5px;
+  background-color: default;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  background-color: rgba(76, 209, 55, 0.8);
+}
+
+.customBtnCreate {
+  position: absolute;
+  right: 7%;
+  padding: 5px 10px;
+  background-color: #62afee;
+  font-weight: normal;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.customHeaderUser {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.customHeaderUser .header-user_title {
+  font-size: 2rem;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.customCreateTitle {
+  height: 70px;
+  background-color: rgba(72, 126, 176, 0.5);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+
+.customBtnGroupCreate {
+  margin: 50px 20px;
+  width: 100px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+#login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: 70vh;
+  margin: 10vh auto;
+  box-shadow: 0 0 10px grey;
+  border-radius: 10px;
+  background-color: rgba(195, 186, 241, 0.4);
+}
+#login-container .login-title {
+  font-size: 3rem;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 5vw;
+}
+#login-container #form-login {
+  margin-top: 2vw;
+  height: 60%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#login-container #form-login .login-name, #login-container #form-login .login-password {
+  display: flex;
+  flex-direction: column;
+}
+#login-container #form-login .login-password {
+  margin-top: 30px;
+}
+#login-container #form-login #btn-login {
+  padding: 15px 30px;
+  background-color: default;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  width: 40%;
+  margin: 3vw auto 0;
+}
+#login-container #form-login label {
+  font-size: 1.5rem;
+}
+#login-container #form-login input {
+  height: 40px;
+  outline: none;
+  padding-left: 10px;
+  font-size: 1.3rem;
+}
+#login-container .login-err {
+  color: red;
+  margin-top: 5px;
+}

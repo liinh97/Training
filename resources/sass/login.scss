@@ -1,0 +1,69 @@
+@import './variables.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-color: rgba(245, 246, 250, 1);
+}
+
+#login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 70vh;
+    margin: 10vh auto;
+    box-shadow: 0 0 10px grey;
+    border-radius: 10px;
+    background-color: rgba(195, 186, 241, 0.4);
+
+    .login-title{
+        @include text(3rem, $black, bold, uppercase);
+        margin-top: 5vw;
+    }
+
+    #form-login{
+        margin-top: 2vw;
+        height: 60%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .login-name{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-password{
+            @extend .login-name;
+            margin-top: 30px;
+        }
+
+        #btn-login{
+            @include button(15px 30px);
+            width: 40%;
+            margin: 3vw auto 0;
+        }
+
+        label{
+            font-size: 1.5rem;
+        }
+
+        input{
+            height: 40px;
+            outline: none;
+            padding-left: 10px;
+            font-size: 1.3rem;
+        }
+    }
+
+    .login-err{
+        color: red;
+        margin-top: 5px;
+    }
+}

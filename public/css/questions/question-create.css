@@ -1,0 +1,182 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.customPage, #question-create {
+  position: relative;
+  width: 95%;
+  height: 80vh;
+  margin: 5vh auto;
+  overflow-x: auto;
+  background-color: #ffffff;
+  padding: 0 5%;
+  border-radius: 5px;
+  box-shadow: 0 0 3px grey;
+}
+
+.customTable {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-top: 90px;
+  border: 2px solid #dcdde1;
+  border-collapse: collapse;
+}
+.customTable .table-head th {
+  padding: 20px 10px;
+  background: rgba(127, 143, 166, 0.5);
+  border: 2px solid #dcdde1;
+  border-collapse: collapse;
+}
+.customTable .table-body td {
+  padding: 5px 2.5px;
+  border: 2px solid #dcdde1;
+  border-collapse: collapse;
+}
+
+.customBtnTable, #question-create #question-post .question-container .container-right .remove-input, #question-create #question-post .question-container .anwser-container #btn-new-input {
+  padding: 4px 5px;
+  background-color: default;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  background-color: rgba(76, 209, 55, 0.8);
+}
+
+.customBtnCreate {
+  position: absolute;
+  right: 7%;
+  padding: 5px 10px;
+  background-color: #62afee;
+  font-weight: normal;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.customHeaderUser {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.customHeaderUser .header-user_title {
+  font-size: 2rem;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.customCreateTitle, #question-create .question-create_title {
+  height: 70px;
+  background-color: rgba(72, 126, 176, 0.5);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+
+.customBtnGroupCreate, #question-create #question-post .question-container .btn-group #btn-back-create-question, #question-create #question-post .question-container .btn-group #btn-confirm-create-question {
+  margin: 50px 20px;
+  width: 100px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+#question-create {
+  width: 50%;
+}
+#question-create .question-create_title {
+  width: 40%;
+  margin-top: 80px;
+}
+#question-create #question-post {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+#question-create #question-post .question-container {
+  width: 100%;
+}
+#question-create #question-post .question-container .question-title,
+#question-create #question-post .question-container .question-type,
+#question-create #question-post .question-container .anwser-container {
+  text-align: left;
+  margin-top: 20px;
+  display: flex;
+}
+#question-create #question-post .question-container .question-title label,
+#question-create #question-post .question-container .question-type label,
+#question-create #question-post .question-container .anwser-container label {
+  font-size: 1.3rem;
+  width: 15%;
+}
+#question-create #question-post .question-container .question-title .question-input-err {
+  width: 100%;
+  margin-left: 0.8vw;
+}
+#question-create #question-post .question-container .question-title .question-input-err input {
+  width: 94%;
+}
+#question-create #question-post .question-container .question-title .question-input-err #question_err_title {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: 5px;
+}
+#question-create #question-post .question-container .anwser-container #question_err_anwser {
+  color: red;
+  font-size: 0.75rem;
+}
+#question-create #question-post .question-container .anwser-container .anwser-list {
+  height: 25vh;
+  overflow-y: auto;
+}
+#question-create #question-post .question-container .container-right .remove-input {
+  background-color: #e3342f;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+#question-create #question-post .question-container .anwser-container .container-right .anwser-list input {
+  margin-top: 10px;
+}
+#question-create #question-post .question-container .btn-group {
+  text-align: center;
+}
+#question-create #question-post .question-container .btn-group #btn-back-create-question, #question-create #question-post .question-container .btn-group #btn-confirm-create-question {
+  margin-top: 3.5vw;
+}
+#question-create #question-post .question-container .btn-group #btn-confirm-create-question {
+  background-color: #273c75;
+  color: #ffffff;
+}
+
+input, select {
+  width: 80%;
+  height: 30px;
+}

@@ -1,0 +1,47 @@
+@import '../variables.scss';
+
+#question-page{
+    @extend .customPage;
+
+    .header-user{
+        @extend .customHeaderUser;
+    }
+
+    #btn-create-question{
+        @extend .customBtnCreate;
+        margin-top: 5vw;
+    }
+
+    .table{
+        @extend .customTable;
+
+        .table-body{
+
+            #btn-question-copy{
+                @extend #btn-question-update;
+                background-color: rgba(156, 136, 255, .8);
+            }
+
+            #btn-question-update{
+                @extend .customBtnTable;
+            }
+
+            #btn-question-delete{
+                @extend #btn-question-update;
+                background-color: rgba(232, 65, 24, .8);
+            }
+        }
+
+        .table-edit-id{
+            width: 5%;
+        }
+
+        .table-edit-checkbox{
+            width: 20%;
+        }
+
+        .table-edit-title{
+            width: 50%;
+        }
+    }
+}

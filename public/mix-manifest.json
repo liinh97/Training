@@ -1,0 +1,14 @@
+{
+    "/css/navbar.css": "/css/navbar.css",
+    "/css/login.css": "/css/login.css",
+    "/css/home.css": "/css/home.css",
+    "/css/categories/category-create.css": "/css/categories/category-create.css",
+    "/css/categories/categories.css": "/css/categories/categories.css",
+    "/css/_variables.css": "/css/_variables.css",
+    "/css/users/users.css": "/css/users/users.css",
+    "/css/users/user-create.css": "/css/users/user-create.css",
+    "/css/search.css": "/css/search.css",
+    "/css/questions/questions.css": "/css/questions/questions.css",
+    "/css/questions/question-create.css": "/css/questions/question-create.css",
+    "/css/paginate.css": "/css/paginate.css"
+}

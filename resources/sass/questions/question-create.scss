@@ -1,0 +1,105 @@
+@import '../variables.scss';
+
+#question-create{
+    @extend .customPage;
+    width: 50%;
+
+    .question-create_title{
+        @extend .customCreateTitle;
+        width: 40%;
+        margin-top: 80px;
+    }
+
+    #question-post{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+
+        .question-container{
+            width: 100%;
+
+            .question-title,
+            .question-type,
+            .anwser-container{
+                text-align: left;
+                margin-top: 20px;
+                display: flex;
+
+                label{
+                    font-size: 1.3rem;
+                    width: 15%;
+                }
+            }
+
+            .question-title{
+
+                .question-input-err{
+                    width: 100%;
+                    margin-left: .8vw;
+                    
+                    input{
+                        width: 94%;
+                    }
+
+                    #question_err_title{
+                        color: red;
+                        font-size: .75rem;
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+            .anwser-container{
+
+                #btn-new-input{
+                    @extend .customBtnTable;
+                }
+
+                #question_err_anwser{
+                    color: red;
+                    font-size: .75rem;
+                }
+
+                .anwser-list{
+                    height: 25vh;
+                    overflow-y: auto;
+                }
+            }
+
+            .container-right{
+
+                .remove-input{
+                    @extend .customBtnTable;
+                    background-color: $red;
+                    padding: 5px 10px;
+                    margin-left: 5px;
+                }
+            }
+
+            .anwser-container .container-right .anwser-list input{
+                margin-top: 10px;
+            }
+
+            .btn-group{
+                text-align: center;
+
+                #btn-back-create-question{
+                    @extend .customBtnGroupCreate;
+                    margin-top: 3.5vw;
+                }
+
+                #btn-confirm-create-question{
+                    @extend #btn-back-create-question;
+                    background-color: rgba(39, 60, 117, 1);
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+input, select{
+    width: 80%;
+    height: 30px;
+}

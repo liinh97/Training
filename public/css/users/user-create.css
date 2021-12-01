@@ -1,0 +1,142 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.customPage, #user-create {
+  position: relative;
+  width: 95%;
+  height: 80vh;
+  margin: 5vh auto;
+  overflow-x: auto;
+  background-color: #ffffff;
+  padding: 0 5%;
+  border-radius: 5px;
+  box-shadow: 0 0 3px grey;
+}
+
+.customTable {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-top: 90px;
+  border: 2px solid #dcdde1;
+  border-collapse: collapse;
+}
+.customTable .table-head th {
+  padding: 20px 10px;
+  background: rgba(127, 143, 166, 0.5);
+  border: 2px solid #dcdde1;
+  border-collapse: collapse;
+}
+.customTable .table-body td {
+  padding: 5px 2.5px;
+  border: 2px solid #dcdde1;
+  border-collapse: collapse;
+}
+
+.customBtnTable {
+  padding: 4px 5px;
+  background-color: default;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  background-color: rgba(76, 209, 55, 0.8);
+}
+
+.customBtnCreate {
+  position: absolute;
+  right: 7%;
+  padding: 5px 10px;
+  background-color: #62afee;
+  font-weight: normal;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.customHeaderUser {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.customHeaderUser .header-user_title {
+  font-size: 2rem;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.customCreateTitle, #user-create .user-create_title {
+  height: 70px;
+  background-color: rgba(72, 126, 176, 0.5);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+
+.customBtnGroupCreate, #user-create #user-post .btn-group #btn-back-create-user, #user-create #user-post .btn-group #btn-confirm-create-user {
+  margin: 50px 20px;
+  width: 100px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+#user-create #user-post {
+  padding: 0 10%;
+  margin-top: 3vw;
+}
+#user-create #user-post .item {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+#user-create #user-post div label {
+  width: 7%;
+  margin-top: 0.3vw;
+}
+#user-create #user-post div .input {
+  width: 70%;
+}
+#user-create #user-post div .input input {
+  width: 100%;
+  height: 30px;
+}
+#user-create #user-post .btn-group {
+  text-align: center;
+}
+#user-create #user-post .btn-group #btn-confirm-create-user {
+  background-color: #273c75;
+  color: #ffffff;
+}
+#user-create #user-post .err {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: 5px;
+}

@@ -1,0 +1,139 @@
+@import '../variables.scss';
+
+#category-create{
+    @extend .customPage;
+
+    .category-create_title{
+        @extend .customCreateTitle;
+        margin: 40px auto 50px;
+    }
+
+    #category-post{
+        text-align: center;
+
+        .category-info{
+            width: 80%;
+            margin: auto;
+            margin-top: 30px;
+            padding: 0px 20px;
+
+            .category-title{
+                text-align: left;
+                display: flex;
+                justify-content: center;
+
+                label{
+                    font-size: 1.6rem;
+                    width: 7%;
+                    padding-right: 40px;
+                }
+
+                .input-err{
+                    width: 100%;
+                    input{
+                        width: 80%;
+                        height: 30px;
+                    }
+                    
+                    #category_err_title{
+                        color: red;
+                        font-size: .75rem;
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+            .category-type{
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+
+                .type-title{
+                    font-size: 1.6rem;
+                    padding-right: 40px;
+                }
+
+                .radio-group{
+                    display: flex;
+
+                    .group-public{
+                        display: flex;
+                        align-items: center;
+
+                        label{
+                            margin: 0 10px;
+                            width: 100%;
+                        }
+
+                        input{
+                            width: 30px;
+                        }
+                    }
+
+                    .group-private{
+                        @extend .group-public;
+                    }
+                }
+            }
+        }
+
+        .list-question{
+
+            .list-question-title{
+                text-align: left;
+                margin-top: 30px;
+            }
+
+            .table{
+                @extend .customTable;
+                margin-top: 10px;
+
+                .table-head{
+                    display: table;
+                    width: 100%;
+                    table-layout: fixed;
+                }
+
+                .table-body{
+                    display: block;
+                    height: 30vh;
+                    overflow-y: auto;
+
+                    tr{
+                        @extend .table-head;
+                    }
+                }
+
+                .table-edit-id{
+                    width: 5%;
+                }
+
+                .table-edit-title{
+                    width: 85%;
+                    text-align: left;
+                    padding-left: 10px;
+                }
+            }
+        }
+
+        #category_err_checkbox{
+            color: red;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .btn-group{
+            text-align: center;
+    
+            #btn-back-create-category{
+                @extend .customBtnGroupCreate;
+            }
+
+            #btn-confirm-create-category{
+                @extend #btn-back-create-category;
+                background-color: rgba(39, 60, 117, 1);
+                color: $white;
+            }
+        }
+    }
+}

@@ -1,0 +1,142 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$white: #ffffff;
+$black: #000000;
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+@mixin button($pd: 10px 20px, $bg: default, $fw: bold){
+    padding: $pd;
+    background-color: $bg;
+    font-weight: $fw;
+    outline: none;
+    cursor: pointer;
+}
+
+@mixin text($fz: 1rem, $color: white, $fw: bold, $upper: lowercase){
+    font-size: $fz;
+    color: $color;
+    font-weight: $fw;
+    text-transform: $upper;
+}
+
+
+// Custom scrollbar
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.customPage{
+    position: relative;
+    width: 95%;
+    height: 80vh;
+    margin: 5vh auto;
+    overflow-x: auto;
+    background-color: $white;
+    padding: 0 5%;
+    border-radius: 5px;
+    box-shadow: 0 0 3px grey;
+}
+
+.customTable{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 90px;
+    border: 2px solid rgba(220, 221, 225, 1);
+    border-collapse: collapse;
+
+    .table-head{
+
+        th{
+            padding: 20px 10px;
+            background: rgba(127, 143, 166, .5);
+            border: 2px solid rgba(220, 221, 225, 1);
+            border-collapse: collapse;
+        }
+    }
+
+    .table-body{
+
+        td{
+            padding: 5px 2.5px;
+            border: 2px solid rgba(220, 221, 225, 1);
+            border-collapse: collapse;
+        }
+    }
+}
+
+.customBtnTable{
+    @include button(4px 5px, default, bold);
+    border-radius: 3px;
+    border: none;
+    color: $white;
+    background-color: rgba(76, 209, 55, .8);
+}
+
+.customBtnCreate{
+    position: absolute;
+    right: 7%;
+    @include button(5px 10px, rgb(98, 175, 238), normal);
+    border: none;
+    color: $white;
+    border-radius: 5px;
+}
+
+.customHeaderUser{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    
+    .header-user_title{
+        @include text(2rem, $black, bold, uppercase);
+    }
+}
+
+.customCreateTitle{
+    height: 70px;
+    background-color: rgba(72, 126, 176, .5);
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    margin: 50px auto;
+    border-radius: 5px;
+}
+
+.customBtnGroupCreate{
+    margin: 50px 20px;
+    width: 100px;
+    @include button(10px 20px, $white, bold);
+    border: 1px solid $black;
+    border-radius: 5px;
+}

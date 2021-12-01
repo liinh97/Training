@@ -1,0 +1,85 @@
+@import 'variables.scss';
+
+.search-user{
+    margin: 50px 0;
+    
+    form{
+        display: flex;
+        justify-content: space-evenly;
+
+        .container-search{
+            display: flex;
+            align-items: center;
+            width: 20%;
+
+            label{
+                width: 20%;
+            }
+
+            input, select{
+                width: 100%;
+            }
+        }
+    }
+
+    #search{
+        @extend .customBtnTable;
+        padding: 10px 20px;
+        background-color: rgba(127, 143, 166, 1);
+    }
+}
+
+.search-category{
+    float: left;
+    margin: 50px;
+
+    form{
+        display: flex;
+        align-items: center;
+
+        .container-search{
+            input{
+                margin-left: .5vw;
+            }
+        }
+    }
+
+    #search{
+        @extend .customBtnTable;
+        padding: 10px 20px;
+        background-color: rgba(127, 143, 166, 1);
+        margin-left: 1vw;
+    }
+}
+
+.search-question{
+    float: left;
+    margin: 50px 20px;
+
+    form{
+        display: flex;
+        align-items: center;
+
+        .container-search{
+            display: flex;
+            align-items: center;
+
+            label{
+                width: 20%;
+                margin-left: 30px;
+            }
+
+            input, select{
+                width: 100%;
+                margin-left: .5vw;
+            }
+        }
+    }
+
+    #search{
+        @extend .customBtnTable;
+        padding: 10px 20px;
+        background-color: rgba(127, 143, 166, 1);
+        margin-left: 2vw;
+    }
+}

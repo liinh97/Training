@@ -1,0 +1,29 @@
+@import '../_variables.scss';
+
+#users-page{
+    @extend .customPage;
+
+    .header-user{
+        @extend .customHeaderUser;
+    }
+
+    #btn-create-user{
+        @extend .customBtnCreate;
+    }
+
+    .table{
+        @extend .customTable;
+
+        .table-body{
+            
+            #btn-user-update{
+                @extend .customBtnTable;
+            }
+    
+            #btn-user-delete{
+                @extend #btn-user-update;
+                background-color: rgba(232, 65, 24, .8);
+            }
+        }        
+    }
+}
