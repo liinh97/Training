@@ -33,7 +33,7 @@
             'option' => $searchWard,
         ]
     ];
-    $data = json_encode($search)
+    $data = json_encode($search);
 ?>
 @extends('home')
 @section('title', 'Users')
@@ -43,7 +43,7 @@
             <div class="header-user_title">User</div>
             <div class="header-user_desc">List User</div>
         </div>
-        <x-search className="search-user" :oldValue="$oldValue" url="users.index" :data="$data"/>
+        <x-search className="search-user" :oldValue="$oldValue" url="users.index" :value="$data"/>
         <button id="btn-create-user" onclick="window.location='{{ url("admin/users/create") }}'">Create</button>
         <table class="table">
             <thead class="table-head">

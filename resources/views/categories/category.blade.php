@@ -16,7 +16,7 @@
             <div class="header-user_title">Categories</div>
             <div class="header-user_desc">List Category</div>
         </div>
-        <x-search className="search-category" :oldValue="$oldValue" url="categories.index" :data="$data"/>
+        <x-search className="search-category" :oldValue="$oldValue" url="categories.index" :value="$data"/>
         <table class="table">
             <button id="btn-create-category" onclick="window.location='{{ url("admin/categories/create") }}'">Create</button>
             <thead class="table-head">

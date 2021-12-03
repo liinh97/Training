@@ -1,7 +1,7 @@
 <div id="search-bar" class="{{$className}}">
     <form action="{{ route($url) }}" method="GET">
         @php
-            $form = json_decode($data)
+            $form = json_decode($value)
         @endphp
         @foreach($form as $value)
             @php

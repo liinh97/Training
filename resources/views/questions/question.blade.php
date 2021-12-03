@@ -33,7 +33,7 @@
             <div class="header-user_title">Questions</div>
             <div class="header-user_desc">List Question</div>
         </div>
-        <x-search className="search-question" :oldValue="$oldValue" url="questions.index" :data="$data"/>
+        <x-search className="search-question" :oldValue="$oldValue" url="questions.index" :value="$data"/>
         <button id="btn-create-question" onclick="window.location='{{ url("admin/questions/create") }}'">Create</button>
         <table class="table">
             <thead class="table-head">
