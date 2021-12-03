@@ -19,7 +19,7 @@ class AnwserSeeder extends Seeder
         for($i = 0; $i < 5; $i++){
             DB::table('anwser')->insert([
                 'question_id' => rand(1, 5),
-                'anwser' => $faker->text(15),
+                'title' => $faker->text(15),
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ]);

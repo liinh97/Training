@@ -1,7 +1,7 @@
 {
-    "/css/navbar.css": "/css/navbar.css",
     "/css/login.css": "/css/login.css",
     "/css/home.css": "/css/home.css",
+    "/css/front.page.css": "/css/front.page.css",
     "/css/categories/category-create.css": "/css/categories/category-create.css",
     "/css/categories/categories.css": "/css/categories/categories.css",
     "/css/_variables.css": "/css/_variables.css",
@@ -10,5 +10,9 @@
     "/css/search.css": "/css/search.css",
     "/css/questions/questions.css": "/css/questions/questions.css",
     "/css/questions/question-create.css": "/css/questions/question-create.css",
-    "/css/paginate.css": "/css/paginate.css"
+    "/css/paginate.css": "/css/paginate.css",
+    "/css/navbar.css": "/css/navbar.css",
+    "/js/jquery.js": "/js/jquery.js",
+    "/js/jquery-confirm.js": "/js/jquery-confirm.js",
+    "/css/jquery-confirm.css": "/css/jquery-confirm.css"
 }

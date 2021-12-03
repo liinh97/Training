@@ -3,11 +3,12 @@
 #question-create{
     @extend .customPage;
     width: 50%;
+    padding: 0 4%;
 
     .question-create_title{
         @extend .customCreateTitle;
         width: 40%;
-        margin-top: 80px;
+        margin-top: 50px;
     }
 
     #question-post{
@@ -28,7 +29,7 @@
 
                 label{
                     font-size: 1.3rem;
-                    width: 15%;
+                    width: 17%;
                 }
             }
 
@@ -39,7 +40,8 @@
                     margin-left: .8vw;
                     
                     input{
-                        width: 94%;
+                        width: 95%;
+                        margin-left: .4vw;
                     }
 
                     #question_err_title{
@@ -47,6 +49,34 @@
                         font-size: .75rem;
                         margin-top: 5px;
                     }
+                }
+            }
+
+            .more-option{
+                display: flex;
+                margin-top: 30px;
+
+                .more-option-title{
+                    font-size: 1.3rem;
+                    width: 17%;
+                }
+
+                .more-option_item{
+                    display: flex;
+                    align-items: center;
+
+                    label{
+                        margin: 0 10px;
+                        width: 4vw;
+                    }
+
+                    input{
+                        width: 20px;
+                    }
+                }
+
+                .require-false{
+                    margin: 0 10px;
                 }
             }
 
@@ -62,7 +92,7 @@
                 }
 
                 .anwser-list{
-                    height: 25vh;
+                    height: 15vh;
                     overflow-y: auto;
                 }
             }
@@ -71,7 +101,7 @@
 
                 .remove-input{
                     @extend .customBtnTable;
-                    background-color: $red;
+                    background-color: $nasturcianFlower;
                     padding: 5px 10px;
                     margin-left: 5px;
                 }

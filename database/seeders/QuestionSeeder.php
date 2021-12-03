@@ -20,6 +20,8 @@ class QuestionSeeder extends Seeder
             DB::table('question')->insert([
                 'title' => $faker->text(15),
                 'type_checkbox' => rand(1, 3),
+                'require' => rand(0, 1),
+                'more' => rand(0, 1),
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ]);

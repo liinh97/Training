@@ -36,6 +36,7 @@ class QuestionController extends Controller
     }
 
     public function store(Request $request){
+        // return response()->json(['data' => $request->all()]);
         $validator = Validator::make($request->all(), [
             'title' => 'required',
             'type_checkbox' => 'required|in:' . implode(',', [
@@ -58,11 +59,13 @@ class QuestionController extends Controller
             $question = QuestionModels::create([
                 'title' => $request['title'],
                 'type_checkbox' => $request['type_checkbox'],
+                'require' => $request['require'],
+                'more' => $request['more'],
             ]);
             foreach($request['anwsers'] as $value){
                 AnwserModel::create([
                     'question_id' => $question['id'],
-                    'anwser' => $value,
+                    'title' => $value,
                 ]);
             }
             DB::commit();
@@ -83,7 +86,7 @@ class QuestionController extends Controller
 
     public function edit($id){
         $question = QuestionModels::find($id);
-        $anwsers = AnwserModel::where('question_id', $id)->get(['question_id', 'anwser']);
+        $anwsers = AnwserModel::where('question_id', $id)->get(['question_id', 'title']);
         return view('questions.question-create', compact('question', 'anwsers'));
     }
 
@@ -109,12 +112,14 @@ class QuestionController extends Controller
             QuestionModels::where('id', $id)->update([
                 'title' => $request['title'],
                 'type_checkbox' => $request['type_checkbox'],
+                'require' => $request['require'],
+                'more' => $request['more'],
             ]);
             AnwserModel::where('question_id', $id)->delete();
             foreach($request['anwsers'] as $value){
                 AnwserModel::create([
                     'question_id' => $id,
-                    'anwser' => $value,
+                    'title' => $value,
                 ]);
             }
             DB::commit();

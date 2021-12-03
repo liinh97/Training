@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/anwser', 'FrontController@getAnwser');
+Route::post('/get-user', 'FrontController@getUser');
+Route::post('/anwser', 'FrontController@postAnwser')->name('anwser.post');
+
 Route::get('/login', 'UserController@getLogin')->name('users.getLogin')->middleware('guest');
 Route::post('/', 'UserController@postLogin')->name('users.postLogin');
 Route::get('/', 'UserController@getLogout')->name('users.getLogout');
@@ -45,9 +49,4 @@ Route::prefix('admin')->middleware(['auth'])->group(function () {
     Route::resource('questions', 'QuestionController')->except(['show']);
     Route::post('questions/{id}/copy', 'QuestionController@copy')->name('questions.copy');
 
-});
-
-
-Route::get('test', function(){
-    return view('test');
 });

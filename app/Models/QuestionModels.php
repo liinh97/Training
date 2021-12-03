@@ -12,6 +12,8 @@ class QuestionModels extends Model
     protected $fillable = [
         'title',
         'type_checkbox',
+        'require',
+        'more',
     ];
 
     CONST TYPE_RADIO = 1;

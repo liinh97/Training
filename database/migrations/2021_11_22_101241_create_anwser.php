@@ -16,7 +16,7 @@ class CreateAnwser extends Migration
         Schema::create('anwser', function (Blueprint $table) {
             $table->id();
             $table->smallInteger('question_id');
-            $table->string('anwser');
+            $table->string('title');
             $table->timestamps();
         });
     }

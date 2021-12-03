@@ -30,6 +30,8 @@ $(function(){
 
         const title = $('#question-title').val();
         const type_checkbox = $('#selection-type').val();
+        const require = $('input[name=require]:checked').val();
+        const more = $('input[name=more]:checked').val();
         const anwserItem = $('.anwser-item');
         const anwsers = [];
         
@@ -43,7 +45,7 @@ $(function(){
         $.ajax({
             type: method,
             url: url,
-            data: {title, type_checkbox, anwsers},
+            data: {title, type_checkbox, anwsers, require, more},
             success: function(response){
                 console.log(response)
                 if(!response.status){
