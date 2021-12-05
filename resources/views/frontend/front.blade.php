@@ -65,7 +65,7 @@
                                                 @else
                                                     class="container-input container-input_edit"
                                                 @endif>
-                                                <input @if($typeInput != 'text') value="{{ $value['title'] }}" @endif type="{{ $typeInput }}" id="{{ $value['title'] }}" name="q{{ $item['id'] }}[]">
+                                                <input @if($typeInput != 'text') value="{{ $value['title'] }}" @endif type="{{ $typeInput }}" id="{{ $value['title'] }}" name="qq{{ $item['id'] }}[]">
                                                 <label @if($item['type'] == $input)
                                                     hidden
                                                 @endif for="{{ $value['title'] }}">{{ $value['title'] }}</label>
@@ -76,7 +76,7 @@
                                         <div class="container-more">
                                             <input type="checkbox" id="q{{ $count }}" class="more-checkbox-{{ $count }} more-checkbox">
                                             <label for="q{{ $count }}">More</label>
-                                            <input disabled class="more-{{ $count }} more-input" name="q{{ $item['id'] }}[] type="text">
+                                            <input disabled class="more-{{ $count }} more-input" name="qq{{ $item['id'] }}[]" type="text">
                                         </div>
                                     @endif
                                 @else
@@ -95,7 +95,7 @@
                                 @endif
                             @else
                                 @if($item['require'])
-                                    <input checked type="checkbox" hidden name="require-validate[]" value="q{{ $count }}">
+                                    <input checked type="checkbox" hidden name="require-validate[]" value="user_id">
                                 @endif
                                 @foreach($item['content'] as $content)
                                     @if($item['type'] == $input)
@@ -106,7 +106,7 @@
                                                 @endif
                                                 <label for="{{ $content['title'] }}">{{ $content['title'] }}</label>
                                                 @if($content['select'])
-                                                    <input type="text" name="user_id" hidden class="id-user" value="">
+                                                    <input type="text" name="qquser_id" hidden class="id-user" value="">
                                                     <select class="select-more-info" name="{{ $content['key'] }}" id="{{ $content['title'] }}">
                                                         <option value=""></option>
                                                         @if($content['db'])
@@ -121,7 +121,7 @@
                                                         @endif
                                                     </select>
                                                 @else
-                                                    <input class="input-more-info" type="{{ $typeInput }}" id="{{ $content['title'] }}" name="qq{{ $count }}">
+                                                    <input class="input-more-info" type="{{ $typeInput }}" id="{{ $content['title'] }}" name="q{{ $count }}">
                                                 @endif
                                             </div>
                                             @if($content['err'])
@@ -146,11 +146,11 @@
                             @if(count($errors) > 0)
                                 @if($item['db'])
                                     @if($item['require'])
-                                        <div class="form-input-err"> {{ $errors->getBag('default')->first('q'.$item['id']) }} </div>
+                                        <div class="form-input-err"> {{ $errors->getBag('default')->first('qq'.$item['id']) }} </div>
                                     @endif
                                 @else
                                     @if($item['require'])
-                                        <div class="form-input-err"> {{ $errors->getBag('default')->first('q'.$count) }} </div>
+                                        <div class="form-input-err"> {{ $errors->getBag('default')->first('qquser_id') }} </div>
                                     @endif
                                 @endif
                             @endif

@@ -50,18 +50,15 @@ class FrontController extends Controller
         return view('frontend.front', compact('categories', 'questions', 'form', 'cities', 'wards'));
     }
 
-    public function postAnwser(Request $request){
-        
+    public function postAnwser(handleAnwser $request){
         DB::beginTransaction();
         try{
             $userAnwser = UserAnwserModel::create([
-                'user_id' => $request['user_id'],
+                'user_id' => $request['qquser_id'],
                 'category_id' => $request['category_id'],
             ]);
             foreach($request->all() as $key => $value){
                 if(is_array($value)){
-                    // except key
-                    return response()->json(['stat' => $key]);
                     if(count($value) > 0){
                         if($value[0] != null){
                             AnwserQuestionModel::create([
