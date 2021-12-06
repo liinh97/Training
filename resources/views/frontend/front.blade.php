@@ -18,7 +18,7 @@
         $input = 3;
     @endphp
     <div class="front-page">
-        <div class="header-title">
+        <div class="header-title container-ipad">
             <div class="title-left"><全国私立保育園連盟></div>
             <div class="title-right">災害報告フォーム</div>
         </div>

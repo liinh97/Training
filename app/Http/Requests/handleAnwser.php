@@ -23,13 +23,11 @@ class handleAnwser extends FormRequest
      */
     public function rules()
     {
-        // dd(FormRequest::all());
         $listRequire = FormRequest::all()['require-validate'];
         $rule = [];
         foreach($listRequire as $value){
             $rule['qq'.$value] = 'required';
         }
-        // dd($rule);
         return $rule;
     }
 
@@ -40,7 +38,6 @@ class handleAnwser extends FormRequest
         foreach($listRequire as $value){
             $mess['qq'.$value . '.required'] = 'This field is required.';
         }
-        // dd($mess);
         return $mess;
     }
 }

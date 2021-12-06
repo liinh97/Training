@@ -263,3 +263,11 @@ $nasturcianFlower: rgba(232, 65, 24,1.0);
     border: 1px solid $black;
     border-radius: 5px;
 }
+
+// Responsive device - 1440px - 1024px - 768px - 480px
+@mixin response($px: 1024px, $fz: 1rem){
+    @media only screen and (max-width: $px){
+        font-size: $fz;
+        @content;
+    }
+}

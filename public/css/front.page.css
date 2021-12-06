@@ -239,6 +239,21 @@ input[type=text], select {
   cursor: default;
   text-align: center;
 }
+@media only screen and (max-width: 1024px) {
+  .front-page .header-title .title-left {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .front-page .header-title .title-left {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .front-page .header-title .title-left {
+    font-size: 1rem;
+  }
+}
 .front-page .header-title .title-right {
   font-size: 3rem;
   color: #f5f6fa;
@@ -247,9 +262,42 @@ input[type=text], select {
   text-align: center;
   margin: 0 100px;
 }
+@media only screen and (max-width: 1024px) {
+  .front-page .header-title .title-right {
+    font-size: 2.5rem;
+    margin: 0 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .front-page .header-title .title-right {
+    font-size: 1.8rem;
+    margin: 0 50px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .front-page .header-title .title-right {
+    font-size: 1.5rem;
+    margin: 10px;
+  }
+}
 .front-page .body-anwser {
   width: 60%;
   padding: 40px 100px;
+}
+@media only screen and (max-width: 1024px) {
+  .front-page .body-anwser {
+    font-size: 1rem;
+    width: 100%;
+    padding: 40px;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 1216px) {
+  .front-page .body-anwser {
+    font-size: 1rem;
+    width: 100%;
+    padding: 40px 80px;
+  }
 }
 .front-page .body-anwser .Q-item {
   display: flex;
@@ -270,6 +318,16 @@ input[type=text], select {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 1024px) {
+  .front-page .body-anwser .Q-item .count-anwser {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .front-page .body-anwser .Q-item .count-anwser {
+    font-size: 1rem;
+  }
+}
 .front-page .body-anwser .Q-item .Q-container {
   margin-left: 20px;
   width: 100%;
@@ -284,6 +342,21 @@ input[type=text], select {
   display: flex;
   align-items: center;
   text-align: left;
+}
+@media only screen and (max-width: 1216px) {
+  .front-page .body-anwser .Q-item .Q-container .Q-title {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .front-page .body-anwser .Q-item .Q-container .Q-title {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .front-page .body-anwser .Q-item .Q-container .Q-title {
+    font-size: 1rem;
+  }
 }
 .front-page .body-anwser .Q-item .Q-container .content {
   display: flex;
@@ -332,8 +405,43 @@ input[type=text], select {
   position: relative;
 }
 .front-page .body-anwser .Q-item .Q-container .content_eidt .container-input label {
-  width: 4.5vw;
+  width: 10vw;
   justify-content: end;
+}
+@media only screen and (max-width: 1024px) {
+  .front-page .body-anwser .Q-item .Q-container .content_eidt .container-input label {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .front-page .body-anwser .Q-item .Q-container .content_eidt .container-input label {
+    font-size: 1rem;
+    width: 4rem;
+  }
+}
+@media only screen and (max-width: 1408px) {
+  .front-page .body-anwser .Q-item .Q-container .content_eidt .container-input input, .front-page .body-anwser .Q-item .Q-container .content_eidt .container-input select {
+    font-size: 1rem;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1216px) {
+  .front-page .body-anwser .Q-item .Q-container .content_eidt .container-input input, .front-page .body-anwser .Q-item .Q-container .content_eidt .container-input select {
+    font-size: 1rem;
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .front-page .body-anwser .Q-item .Q-container .content_eidt .container-input input, .front-page .body-anwser .Q-item .Q-container .content_eidt .container-input select {
+    font-size: 1rem;
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .front-page .body-anwser .Q-item .Q-container .content_eidt .container-input input, .front-page .body-anwser .Q-item .Q-container .content_eidt .container-input select {
+    font-size: 1rem;
+    width: 50%;
+  }
 }
 .front-page .body-anwser .Q-item .Q-container .content_eidt .container-input .desc {
   font-size: 0.85rem;
@@ -343,7 +451,35 @@ input[type=text], select {
   text-align: center;
   position: absolute;
   bottom: 2vw;
-  left: 6vw;
+  left: 11.5vw;
+}
+@media only screen and (max-width: 1408px) {
+  .front-page .body-anwser .Q-item .Q-container .content_eidt .container-input .desc {
+    font-size: 0.8rem;
+    bottom: 3vw;
+    left: 12vw;
+  }
+}
+@media only screen and (max-width: 1216px) {
+  .front-page .body-anwser .Q-item .Q-container .content_eidt .container-input .desc {
+    font-size: 0.8rem;
+    bottom: 3.5vw;
+    left: 12.5vw;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .front-page .body-anwser .Q-item .Q-container .content_eidt .container-input .desc {
+    font-size: 0.7rem;
+    bottom: 4vw;
+    left: 13.5vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .front-page .body-anwser .Q-item .Q-container .content_eidt .container-input .desc {
+    font-size: 0.5rem;
+    bottom: 6.5vw;
+    left: 15vw;
+  }
 }
 .front-page .body-anwser .Q-item .Q-container .content_eidt .container-input:not(:nth-child(1)) {
   margin-left: 0px;
@@ -363,7 +499,64 @@ input[type=text], select {
   border: 2px solid #1320b3;
   border-radius: 10px;
   width: 20%;
-  margin: 1.5vw 8vw;
+  margin: 1.5vw 15vw;
+}
+@media only screen and (max-width: 1408px) {
+  .front-page .body-anwser .Q-item .Q-container .content_eidt .c3-custom {
+    font-size: 1rem;
+    margin: 1.5vw 19vw;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 0px;
+    color: #1320b3;
+    background-color: #a29bfe;
+    border: none;
+    border: 1.5px solid #1320b3;
+    border-radius: 10px;
+  }
+}
+@media only screen and (max-width: 1216px) {
+  .front-page .body-anwser .Q-item .Q-container .content_eidt .c3-custom {
+    font-size: 1rem;
+    margin: 1.5vw 16vw;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 0px;
+    color: #1320b3;
+    background-color: #a29bfe;
+    border: none;
+    border: 1.5px solid #1320b3;
+    border-radius: 10px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .front-page .body-anwser .Q-item .Q-container .content_eidt .c3-custom {
+    font-size: 1rem;
+    margin: 1.5vw 20vw;
+    cursor: pointer;
+    outline: none;
+    padding: 8px 0px;
+    color: #1320b3;
+    background-color: #a29bfe;
+    border: none;
+    border: 1.5px solid #1320b3;
+    border-radius: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .front-page .body-anwser .Q-item .Q-container .content_eidt .c3-custom {
+    font-size: 1rem;
+    margin: 1.5vw 24vw;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 0px;
+    color: #1320b3;
+    background-color: #a29bfe;
+    border: none;
+    border: 1px solid #1320b3;
+    border-radius: 10px;
+    font-size: 0.75rem;
+  }
 }
 .front-page .body-anwser #btn-submit-anwser {
   font-size: 1rem;
@@ -379,6 +572,24 @@ input[type=text], select {
   border: none;
   width: 15%;
   margin: 2.5vw 20vw;
+}
+@media only screen and (max-width: 1216px) {
+  .front-page .body-anwser #btn-submit-anwser {
+    font-size: 1rem;
+    margin: 2.5vw 38vw;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .front-page .body-anwser #btn-submit-anwser {
+    font-size: 1rem;
+    margin: 2.5vw 35vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .front-page .body-anwser #btn-submit-anwser {
+    font-size: 1rem;
+    margin: 2.5vw 30vw;
+  }
 }
 
 .container-input:not(:nth-child(1)) {
